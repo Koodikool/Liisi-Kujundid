@@ -1,3 +1,3 @@
 function changeTab(shape) {
-  document.write(shape);
+  document.getElementById(shape).style.backgroundColor = "LightYellow";
 }
