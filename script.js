@@ -1,3 +1,3 @@
-function changeTab() {
-  document.write("Test");
+function changeTab(shape) {
+  document.write(shape);
 }
