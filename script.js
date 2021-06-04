@@ -1,3 +1,5 @@
 function changeTab(shape) {
-  document.getElementById(shape).style.backgroundColor = "LightYellow";
+  for (const tabcontent of document.getElementsByClassName("tabcontent")) {
+    tabcontent.hidden = true;
+  }
 }
