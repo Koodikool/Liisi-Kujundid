@@ -10,6 +10,7 @@ function changeTab(button, shape) {
 }
 function err() {
   document.getElementById("Perimeter").innerHTML = "VIGA";
+  document.getElementById("Area").innerHTML = "VIGA";
 }
 function triangle() {
   const side1 = parseFloat(document.getElementById("TriangleSide1").value);
@@ -17,6 +18,7 @@ function triangle() {
   const side3 = parseFloat(document.getElementById("TriangleSide3").value);
   if (isTriangle(side1, side2, side3)) {
     document.getElementById("Perimeter").innerHTML = trianglePerimeter(side1, side2, side3);
+    document.getElementById("Area").innerHTML = triangleArea(side1, side2, side3);
   } else {
     err();
   }
@@ -26,4 +28,8 @@ function isTriangle(side1, side2, side3) {
 }
 function trianglePerimeter(side1, side2, side3) {
   return side1 + side2 + side3;
+}
+function triangleArea(side1, side2, side3) {
+  const halfPerimeter = trianglePerimeter(side1, side2, side3) / 2;
+  return Math.sqrt(halfPerimeter * (halfPerimeter - side1) * (halfPerimeter - side2) * (halfPerimeter - side3));
 }
