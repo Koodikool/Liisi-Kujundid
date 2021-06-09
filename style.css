@@ -7,6 +7,9 @@
 #TriangleButton {
   background: Crimson;
 }
+.fieldname {
+  width: 70px;
+}
 .tabbutton {
   border-radius: 4px;
   height: 30px;
