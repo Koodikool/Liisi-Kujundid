@@ -7,6 +7,10 @@
 #TriangleButton {
   background: Crimson;
 }
+.tabbutton {
+  height: 30px;
+  width: 70px;
+}
 body {
   background: LightCoral;
 }
