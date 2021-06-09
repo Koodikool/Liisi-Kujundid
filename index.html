@@ -28,10 +28,34 @@
   </button>
 </div>
 <div class="tabcontent" hidden id="Parallelogram">
-  Siia tuleb rööpküliku ümbermõõdu ja pindala arvutus.
+  <label for="ParallelogramAngle">
+    Nurk (rad)
+  </label>
+  <input id="ParallelogramAngle">
+  </br>
+  <label for="ParallelogramSide1">
+    Külg 1
+  </label>
+  <input id="ParallelogramSide1">
+  </br>
+  <label for="ParallelogramSide2">
+    Külg 2
+  </label>
+  <input id="ParallelogramSide2">
+  </br>
+  <button onclick="parallelogram();">
+    Arvuta
+  </button>
 </div>
 <div class="tabcontent" hidden id="Circle">
-  Siia tuleb ringi ümbermõõdu ja pindala arvutus.
+  <label for="CircleRadius">
+    Raadius
+  </label>
+  <input id="CircleRadius">
+  </br>
+  <button onclick="circle();">
+    Arvuta
+  </button>
 </div>
 Ümbermõõt:
 <div id="Perimeter">

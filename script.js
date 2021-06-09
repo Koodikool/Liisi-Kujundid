@@ -33,3 +33,41 @@ function triangleArea(side1, side2, side3) {
   const halfPerimeter = trianglePerimeter(side1, side2, side3) / 2;
   return Math.sqrt(halfPerimeter * (halfPerimeter - side1) * (halfPerimeter - side2) * (halfPerimeter - side3));
 }
+function parallelogram() {
+  const angle = parseFloat(document.getElementById("ParallelogramAngle").value);
+  const side1 = parseFloat(document.getElementById("ParallelogramSide1").value);
+  const side2 = parseFloat(document.getElementById("ParallelogramSide2").value);
+  if (isParallelogram(angle, side1, side2)) {
+    document.getElementById("Perimeter").innerHTML = parallelogramPerimeter(side1, side2);
+    document.getElementById("Area").innerHTML = parallelogramArea(angle, side1, side2);
+  } else {
+    err();
+  }
+}
+function isParallelogram(angle, side1, side2) {
+  return angle > 0 && angle < Math.PI && side1 > 0 && side2 > 0;
+}
+function parallelogramPerimeter(side1, side2) {
+  return 2 * (side1 + side2);
+}
+function parallelogramArea(angle, side1, side2) {
+  return Math.sin(angle) * side1 * side2;
+}
+function circle() {
+  const radius = parseFloat(document.getElementById("CircleRadius").value);
+  if (isCircle(radius)) {
+    document.getElementById("Perimeter").innerHTML = circlePerimeter(radius);
+    document.getElementById("Area").innerHTML = circleArea(radius);
+  } else {
+    err();
+  }
+}
+function isCircle(radius) {
+  return radius > 0;
+}
+function circlePerimeter(radius) {
+  return 2 * Math.PI * radius;
+}
+function circleArea(radius) {
+  return Math.PI * Math.pow(radius, 2);
+}
