@@ -9,5 +9,6 @@ function changeTab(button, shape) {
   document.getElementById(shape).hidden = false;
 }
 function triangle() {
-  document.getElementById("Perimeter").innerHTML = "Test";
+  const side1 = document.getElementById("TriangleSide1").value;
+  document.getElementById("Perimeter").innerHTML = `Külg 1: ${side1}`;
 }
