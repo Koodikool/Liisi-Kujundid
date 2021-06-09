@@ -8,3 +8,6 @@ function changeTab(button, shape) {
   button.disabled = true;
   document.getElementById(shape).hidden = false;
 }
+function triangle() {
+  document.getElementById("Perimeter").innerHTML = "Test";
+}
