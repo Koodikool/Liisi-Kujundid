@@ -10,5 +10,7 @@ function changeTab(button, shape) {
 }
 function triangle() {
   const side1 = document.getElementById("TriangleSide1").value;
-  document.getElementById("Perimeter").innerHTML = `Külg 1: ${side1}`;
+  const side2 = document.getElementById("TriangleSide2").value;
+  const side3 = document.getElementById("TriangleSide3").value;
+  document.getElementById("Perimeter").innerHTML = `Külg 1: ${side1}, Külg 2: ${side2}, Külg 3: ${side3}`;
 }
