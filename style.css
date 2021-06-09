@@ -7,6 +7,11 @@
 #TriangleButton {
   background: Crimson;
 }
+.compute {
+  border-radius: 4px;
+  height: 30px;
+  width: 50px;
+}
 .fieldname {
   width: 70px;
 }
