@@ -7,6 +7,8 @@ function changeTab(button, shape) {
   }
   button.disabled = true;
   document.getElementById(shape).hidden = false;
+  document.getElementById("Perimeter").innerHTML = "";
+  document.getElementById("Area").innerHTML = "";
 }
 function err() {
   document.getElementById("Perimeter").innerHTML = "VIGA";
