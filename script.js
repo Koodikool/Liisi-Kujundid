@@ -9,6 +9,16 @@ function changeTab(button, shape) {
   document.getElementById(shape).hidden = false;
   document.getElementById("Perimeter").innerHTML = "";
   document.getElementById("Area").innerHTML = "";
+  switch(shape) {
+    case "Triangle":
+      document.body.style.background = "LightCoral";
+      break;
+    case "Parallelogram":
+      document.body.style.background = "DarkSeaGreen";
+      break;
+    case "Circle":
+      document.body.style.background = "LightSteelBlue";
+  }
 }
 function err() {
   document.getElementById("Perimeter").innerHTML = "VIGA";
