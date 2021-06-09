@@ -8,6 +8,7 @@
   background: Crimson;
 }
 .tabbutton {
+  border-radius: 4px;
   height: 30px;
   width: 70px;
 }
